@@ -43,4 +43,4 @@ void	foo(t_data *data)
 
 This means these iterators are very scalable, since it means you won't ever have to reimplement any subiterators for high-level iterators. In other words, you won't have to reinvent the wheel.
 
-Note that iterators also automatically reset themselves once they reach their FINISHED state. `sl_reset_iterate_grid()` should only be called when you want to return from an iterator while-loop early.
+Note that iterators also automatically reset themselves once they reach their `FINISHED` state. `sl_reset_iterate_grid()` should only be called when you want to return from an iterator while-loop early.
