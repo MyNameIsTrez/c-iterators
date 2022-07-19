@@ -6,7 +6,7 @@
 /*   By: sbos <sbos@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/07/19 10:31:56 by sbos          #+#    #+#                 */
-/*   Updated: 2022/07/19 11:39:17 by sbos          ########   odam.nl         */
+/*   Updated: 2022/07/19 12:36:32 by sbos          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ int	main(void)
 	// Replace with your ft_bzero() or make data static
 	bzero(&data, sizeof(t_data));
 	data.width = 3;
-	while (sl_iterate_width(&data) != FINISHED)
+	while (iterate_width(&data) != FINISHED)
 		printf("x: %d\n", data.it.x);
 	printf("\n");
-	while (sl_iterate_width(&data) != FINISHED)
+	while (iterate_width(&data) != FINISHED)
 		printf("x: %d\n", data.it.x);
 	return (EXIT_SUCCESS);
 }

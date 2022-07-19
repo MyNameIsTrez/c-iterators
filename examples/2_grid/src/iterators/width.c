@@ -6,7 +6,7 @@
 /*   By: sbos <sbos@student.codam.nl>                 +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/07/06 15:57:06 by sbos          #+#    #+#                 */
-/*   Updated: 2022/07/19 11:10:31 by sbos          ########   odam.nl         */
+/*   Updated: 2022/07/19 12:36:32 by sbos          ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,18 +32,18 @@ static t_iterator_status	resettable_iterate_width(t_data *data, bool reset)
 		x++;
 		return (LOOPED);
 	}
-	sl_reset_iterate_width(data);
+	reset_iterate_width(data);
 	return (FINISHED);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 
-t_iterator_status	sl_iterate_width(t_data *data)
+t_iterator_status	iterate_width(t_data *data)
 {
 	return (resettable_iterate_width(data, false));
 }
 
-void	sl_reset_iterate_width(t_data *data)
+void	reset_iterate_width(t_data *data)
 {
 	resettable_iterate_width(data, true);
 }
