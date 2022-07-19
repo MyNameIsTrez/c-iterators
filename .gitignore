@@ -1,0 +1,14 @@
+*
+
+!*/
+
+!.gitignore
+
+!*.[ch]
+
+!Makefile
+
+!README.md
+
+!.vscode/launch.json
+!.vscode/tasks.json

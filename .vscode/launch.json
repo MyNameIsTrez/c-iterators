@@ -1,0 +1,24 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "1_width",
+			"type": "lldb",
+			"request": "launch",
+			"program": "${workspaceFolder}/examples/1_width/width",
+			"cwd": "${workspaceFolder}",
+			"preLaunchTask": "Build 1_width"
+		},
+		{
+			"name": "2_grid",
+			"type": "lldb",
+			"request": "launch",
+			"program": "${workspaceFolder}/examples/2_grid/grid",
+			"cwd": "${workspaceFolder}",
+			"preLaunchTask": "Build 2_grid"
+		}
+	]
+}

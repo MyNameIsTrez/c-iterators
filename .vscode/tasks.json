@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build 1_width",
+            "type": "shell",
+            "command": "make -C examples/1_width",
+            "problemMatcher": [ "$gcc" ],
+            "group": "build"
+        },
+        {
+            "label": "Build 2_grid",
+            "type": "shell",
+            "command": "make -C examples/2_grid",
+            "problemMatcher": [ "$gcc" ],
+            "group": "build"
+        }
+    ]
+}
